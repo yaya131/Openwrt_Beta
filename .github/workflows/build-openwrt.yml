@@ -153,22 +153,22 @@ jobs:
         echo "::warning file=wetransfer.com::$(cat wetransfer.log | grep https)"
         echo "::set-output name=url::$(cat wetransfer.log | grep https | cut -f3 -d" ")"
 
-    - name: Generate release tag
-      id: tag
+    - name: Generate release dev
+      id: dev
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       run: |
-        echo "::set-output name=release_tag::$(date +"%Y.%m.%d-%H%M")"
+        echo "::set-output name=release_dev::$(date +"%Y.%m.%d-%H%M")"
         touch release.txt
         [ $UPLOAD_COWTRANSFER = true ] && echo "🔗 [Cowtransfer](${{ steps.cowtransfer.outputs.url }})" >> release.txt
         [ $UPLOAD_WETRANSFER = true ] && echo "🔗 [WeTransfer](${{ steps.wetransfer.outputs.url }})" >> release.txt
 
     - name: Upload firmware to release
       uses: softprops/action-gh-release@v1
-      if: steps.tag.conclusion.status == 'success' && !cancelled()
+      if: steps.dev.conclusion.status == 'success' && !cancelled()
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: ${{ steps.tag.outputs.release_tag }}
+        dev_name: ${{ steps.dev.outputs.release_dev }}
         body_path: release.txt
         files: ${{ env.FIRMWARE }}/*
 
@@ -183,6 +183,6 @@ jobs:
       if: env.UPLOAD_RELEASE == 'true' && !cancelled()
       with:
         keep_latest: 3
-        delete_tags: true
+        delete_devs: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
