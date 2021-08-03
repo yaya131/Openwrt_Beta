@@ -4,7 +4,7 @@
 
 #简单mesh 
 
-#pass（全组件）
+#ssp（全组件）
 
 #smartdns 
 
@@ -12,14 +12,12 @@
 
 #云音乐 
 
-#流控 
+#流控sq&sqm
 
 #ttyd 
 
 #zerotier 
 
 #Turbo ACC #访客网络
-
-#备注pass全组件配合smartdns使用。
 
 不喜欢的可以删除！
