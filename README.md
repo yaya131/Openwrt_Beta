@@ -1,23 +1,41 @@
-精简集成的插件：
+包含：纯净ap版本=====精简插件SCJ版本======全插件DCJ版本
+
+集成的插件：
 
 #IPv6
 
-#简单mesh 
+#简单mesh
 
-#ssp（全组件）
+#科学ssp（全组件）
 
-#smartdns 
+#smartdns
 
 #去广告plus
 
-#云音乐 
+#云音乐
 
-#流控sq&sqm
+#流控
 
-#ttyd 
+#ttyd
 
-#zerotier 
+#zerotier
 
-#Turbo ACC #访客网络
+#Turbo ACC
 
-不喜欢的可以删除！
+#访客网络
+
+#全能推送
+
+#openclash
+
+#jd签到
+
+#多拨&负载均衡
+
+##########如有不想要的插件，需要自定义请移至我的这个 https://github.com/jingleijack/AX6-AX3600_chajian_quan_peizhi_banben   在.config文件里找到相应的插件名称删除即可#############
+
+节约资源从我做起！
+
+直接下载我的最新版本即可。
+
+！！刷机尽可能不保留配置刷入！！
