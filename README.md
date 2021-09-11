@@ -10,6 +10,7 @@ Development——AX6_AX3600_AX9000开发版
 #简单组网
 #科学ssp（全组件）
 
+#小猫咪
 #smartdns
 #去广告plus
 #云音乐
@@ -27,10 +28,9 @@ Development——AX6_AX3600_AX9000开发版
 
 等等
 
-##########如有不想要的插件，需要自定义请移至我的这个 https://github.com/jingleijack/AX6-AX3600_chajian_quan_peizhi_banben   在.config文件里找到相应的插件名称删除即可#############
-
+##如有不想要的插件，需要自定义
+请移至我的这个 https://github.com/jingleijack/AX6-AX3600_chajian_quan_peizhi_banben   
+在.config文件里找到相应的插件名称删除即可##
 节约资源从我做起！
-
 直接下载我的最新版本即可。
-
-！！刷机尽可能不保留配置刷入！！
+刷机尽可能不保留配置刷入
