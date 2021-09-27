@@ -38,7 +38,7 @@ git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #git clone https://github.com/jerrykuku/lua-maxminddb.git package/lua-maxminddb
 #git clone https://github.com/jerrykuku/luci-app-vssr.git package/luci-app-vssr
 
-#git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
+git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-iptvhelper
 #添加smartdns
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
