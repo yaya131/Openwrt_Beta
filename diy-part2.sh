@@ -23,6 +23,10 @@ git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package
 git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
 git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git package/luci-theme-atmaterial
 git clone https://github.com/sirpdboy/luci-theme-opentopd.git package/luci-theme-opentopd
+# Add luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config
+rm -rf ../lean/luci-theme-argon
 # Modify hostname
 #sed -i 's/OpenWrt/OpenWrt/g' package/base-files/files/bin/config_generate
 
