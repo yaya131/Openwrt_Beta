@@ -40,6 +40,8 @@ git clone https://github.com/vernesong/OpenClash.git package/OpenClash
 #git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/luci-app-jd-dailybonus
 
 git clone https://github.com/sirpdboy/luci-app-netdata.git package/luci-app-netdata
+rm -rf ../lean/luci-app-netdata
+
 git clone https://github.com/kiddin9/luci-app-dnsfilter.git package/luci-app-dnsfilter
 
 #git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
