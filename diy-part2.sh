@@ -19,7 +19,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=165535' package/base-files/files/etc/sysctl.conf
 
 #git clone https://github.com/kiddin9/openwrt-packages.git package/openwrt-packages
-git clone https://github.com/coolsnowwolf/luci.git package/luci
+#git clone https://github.com/coolsnowwolf/luci.git package/luci
 
 # themes添加（svn co 命令意思：指定版本如https://github）
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
