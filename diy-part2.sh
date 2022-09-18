@@ -56,3 +56,8 @@ git clone https://github.com/riverscn/openwrt-iptvhelper.git package/openwrt-ipt
 git clone https://github.com/pymumu/openwrt-smartdns package/smartdns
 git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 #git clone -b luci https://github.com/pexcn/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
+
+echo 'refresh feeds'
+./scripts/feeds update -a
+./scripts/feeds install -a
+
