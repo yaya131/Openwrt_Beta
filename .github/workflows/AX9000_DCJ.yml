@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/yaya131/lede
+  REPO_URL: https://github.com/KFERMercer/OpenWrt
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: AX9000_DCJ.config
