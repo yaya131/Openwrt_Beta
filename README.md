@@ -5,7 +5,7 @@ lean已删除AX9000相关！所以AX9000开发板将只是插件的更新！
 
 新增5.10内核主线的更新：特色，NSS，最新内核，最新插件，日更！
 
-项目地址：https://github.com/yaya131/LEDE-XiaoMi-Test
+AX6-AX3600-AX9000测试项目地址：https://github.com/yaya131/LEDE-XiaoMi-Test
 
 源编译的固件特别说明：
 
