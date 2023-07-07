@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Redmi_AX6_AP
+name: IPQ807X_AP
 
 on:
   repository_dispatch:
@@ -23,7 +23,12 @@ env:
   REPO_URL: https://github.com/xiangfeidexiaohuo/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
+# 默认编译AX6固件，需要编译AX3600自行切换
+# AX3600
+  #CONFIG_FILE: AX3600_AP.config
+# AX6
   CONFIG_FILE: AX6_AP.config
+  
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
