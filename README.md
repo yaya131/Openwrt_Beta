@@ -21,7 +21,14 @@ AX6-AX3600-AX9000测试项目地址：https://github.com/yaya131/LEDE-XiaoMi-Tes
 激进，快速，稳定.层次逻辑更清晰
 
 20210927精简了部分特小众的插件
+# 添加红米ax6 编译选项
+    - name: Redmi ax6  ax3600 support
+      run: |
+        cat $GITHUB_WORKSPACE/generic.mk >> openwrt/target/linux/ipq807x/image/generic.mk
 
+
+
+        
 包含：
 
 纯净ap=====精简插件SCJ======全插件DCJ
