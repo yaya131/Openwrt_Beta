@@ -14,11 +14,11 @@ env:
   REPO_URL: https://github.com/admin6750217/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-# 默认编译AX6固件，需要编译AX3600自行切换
-# AX6
+#默认编译AX6固件，需要编译AX3600自行切换
+#AX6
   CONFIG_FILE: AX6_5.10.100.config
-# AX3600
-# CONFIG_FILE: AX3600_5.10.100.config
+#aX3600
+#CONFIG_FILE: AX3600_5.10.100.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -27,9 +27,6 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-
-  FILE_NAME: IPQ807X_5.10.100
-  PRODUCT_NAME: IPQ807X_5.10.100
 
 jobs:
   build:
