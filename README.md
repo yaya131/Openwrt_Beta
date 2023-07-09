@@ -2,6 +2,9 @@
 国内网盘：https://wwnn.lanzoue.com/b02c8p8ta
 密码:777s
 
+AX3600:https://wwnn.lanzoue.com/b02cca30f
+密码:2zy3
+
 
 Development——AX6_AX3600_AX9000开发版
 lean已删除AX9000相关！所以AX9000开发板将只是插件的更新！
