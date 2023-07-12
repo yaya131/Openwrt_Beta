@@ -1,5 +1,5 @@
 
-name:5.10.100
+name:5.10
 
 on:
   repository_dispatch:
