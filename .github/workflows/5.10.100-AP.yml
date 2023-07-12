@@ -1,7 +1,7 @@
 
-name:5.10
+name: IPQ807X_5.10.100-AP
 
- on:
+on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
