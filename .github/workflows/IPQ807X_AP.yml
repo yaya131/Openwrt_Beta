@@ -49,7 +49,18 @@ jobs:
       
     - name: Checkout
       uses: actions/checkout@master
-
+    - name: Fix AX6
+      run: |
+          if [ "$OWRT_TARGET" == "Redmi-AX6" ]; then
+            cd ./owrt
+            # 因AX6无线驱动问题，暂时维持源码版本在20230501
+            git reset --hard 26f3634631244eedfbdfd61ea6cc3a2d7f5d896f
+            # Patch
+            cp -rf $GITHUB_WORKSPACE/general/AX6/target/linux/ipq807x/image/generic.mk target/linux/ipq807x/image/
+            echo 'Fix AX6 Done!'
+          else
+            echo 'Fix AX6 Skip!'
+          fi
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
