@@ -1,5 +1,5 @@
 很久 没跟新了，今天更新一波！
-
+AX6常规更新：https://github.com/yaya131/RedMi-AX6-NSS
 很久没更新，没看源码，添加缺失的IPQ807x无线，暂时没测试！
 国内网盘：https://wwnn.lanzoue.com/b02c8p8ta
 密码:777s
