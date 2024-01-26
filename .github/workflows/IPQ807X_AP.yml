@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: IPQ807X_AP
+name: AX3600_DCJ
 
 on:
   repository_dispatch:
@@ -23,12 +23,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-# 默认编译AX6固件，需要编译AX3600自行切换
-# AX3600
-  #CONFIG_FILE: AX3600_AP.config
-# AX6
-  CONFIG_FILE: AX6_AP.config
-  
+  CONFIG_FILE: AX3600_DCJ.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -37,7 +32,7 @@ env:
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  
+
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -49,18 +44,7 @@ jobs:
       
     - name: Checkout
       uses: actions/checkout@master
-    - name: Fix AX6
-      run: |
-          if [ "$OWRT_TARGET" == "Redmi-AX6" ]; then
-            cd ./owrt
-            # 因AX6无线驱动问题，暂时维持源码版本在20230501
-            git reset --hard 26f3634631244eedfbdfd61ea6cc3a2d7f5d896f
-            # Patch
-            cp -rf $GITHUB_WORKSPACE/general/AX6/target/linux/ipq807x/image/generic.mk target/linux/ipq807x/image/
-            echo 'Fix AX6 Done!'
-          else
-            echo 'Fix AX6 Skip!'
-          fi
+
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
