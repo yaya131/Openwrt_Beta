@@ -1,5 +1,5 @@
 
-name: IPQ807X_5.10.100-AP
+name: RAX3000M
 
 on:
   repository_dispatch:
@@ -10,19 +10,17 @@ on:
         required: false
         default: 'false'
 
-
-
 env:
-  REPO_URL: https://github.com/admin6750217/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
   
 #默认编译AX6固件，需要编译AX3600自行切换
 
 #AX6
-  CONFIG_FILE: AX6_5.10.100.config
+  CONFIG_FILE: RAX3000M.config
 #aX3600
-#CONFIG_FILE: AX3600_5.10.100.config
+#CONFIG_FILE: RAX3000M.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
@@ -34,7 +32,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     # if: github.event.repository.owner.id == github.event.sender.id
 
     steps:
