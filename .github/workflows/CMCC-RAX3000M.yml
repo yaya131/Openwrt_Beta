@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt Newifi-D2
+name: Build OpenWrt RAX3000M
 
 on:
   repository_dispatch:
@@ -29,20 +29,20 @@ on:
   #watch:
   # types: [started]
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/hanwckf/immortalwrt-mt798x
+  REPO_BRANCH: openwrt-21.02
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: config/Newifi_D2.config
-  DIY_P1_SH: sh/lede_diy-part1.sh
-  DIY_P2_SH: sh/Newifi-D2_diy-part2.sh
+  CONFIG_FILE: RAX3000M.config
+  DIY_P1_SH: diy-part1.sh
+  DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
   UPLOAD_WETRANSFER: false
   UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
-  FILE_NAME: Newifi-D2
-  PRODUCT_NAME: Newifi-D2
+  FILE_NAME: RAX3000M
+  PRODUCT_NAME: RAX3000M
   
 jobs:
   build:
@@ -181,11 +181,11 @@ jobs:
         commit: main
         token: ${{ secrets.RELEASES_TOKEN }}
         body: |
-         #### Newifi_D2 Openwrt固件配置：
+         #### RAX3000M Openwrt固件配置：
             - IP:192.168.10.1
             - WEB登陆账户：root
             - 密码：password
-            - 固件源码：https://github.com/coolsnowwolf/lede
+            - 固件源码：https://github.com/hanwckf/immortalwrt-mt798x
             - 固件内核版本：5.4
          #### 源码最近提交信息:
             - ${{ env.useVersionInfo }}
@@ -206,7 +206,7 @@ jobs:
       with:
         #repo:
         keep_latest: 5
-        delete_tag_pattern: Newifi-D2
+        delete_tag_pattern: RAX3000M
         delete_tags: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
