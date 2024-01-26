@@ -161,9 +161,8 @@ jobs:
       run: |
         cd openwrt/bin/targets/*/*
         rm -rf packages
-        rm -rf profiles.json feeds.buildinfo config.buildinfo *openwrt-x86-64-generic-kernel.bin *openwrt-x86-64-generic-squashfs-rootfs.img.gz *openwrt-x86-64-generic.manifest sha256sums version.buildinfo
         echo "FIRMWARE=$PWD" >> $GITHUB_ENV
-        echo "status=success" >> $GITHUB_OUTPUT
+        echo "::set-output name=status::success"
 
     - name: 上传固件目录 #Upload firmware directory
       uses: actions/upload-artifact@main
