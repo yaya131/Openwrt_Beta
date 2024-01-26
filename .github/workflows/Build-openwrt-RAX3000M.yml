@@ -112,11 +112,17 @@ jobs:
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
 
-    - name: 更新源 #Update feeds
-      run: cd openwrt && ./scripts/feeds update -a
+    - name: Load custom feeds
+      run: |
+          cd ./owrt
+          echo 'src-git smpackage https://github.com/kenzok8/small-package' >> feeds.conf.default
 
-    - name: 安装源 #Install feeds
-      run: cd openwrt && ./scripts/feeds install -a
+    - name: Update Feeds
+      run: |
+          cd ./owrt
+
+          ./scripts/feeds update -a
+          ./scripts/feeds install -a
         
 #    - name: SSH connection to Actions
 #      uses: P3TERX/ssh2actions@v1.0.0
