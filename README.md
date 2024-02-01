@@ -1,6 +1,6 @@
 很久 没跟新了，今天更新一波！
-AX6常规更新：https://github.com/yaya131/RedMi-AX6-NSS
-很久没更新，没看源码，添加缺失的IPQ807x无线，暂时没测试！
+NSS测试更新：https://github.com/yaya131/RedMi-AX6-NSS
+IPQ807x无线NSS，暂时没测试！基于这位大神的源码：https://github.com/qosmio/openwrt-ipq.git
 
 国内网盘：https://wwnn.lanzoue.com/b02c8p8ta
 密码:777s
@@ -12,9 +12,6 @@ AX3600:https://wwnn.lanzoue.com/b02cca30f
 Development——AX6_AX3600_AX9000开发版
 lean已删除AX9000相关！所以AX9000开发板将只是插件的更新！
 
-基于OPenwrt官方源：https://github.com/yaya131/RedMi-AX6-NSS  AX6-nss加速！无线没有！
-2023-01-05：蓝奏云网盘更新基准以测试使用15天无问题才会更新，由于群与TG随缘看，仅交流。暂无添加插件的计划。蓝奏云网盘随缘更新！所有更新以Github为主！     无NSS的5.10.100的AX6及AX3600相关编译移至全能版块！具体看介绍！
-        
 包含：
 
 纯净ap=====精简插件SCJ======全插件DCJ
