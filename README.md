@@ -1,5 +1,7 @@
 很久 没跟新了，今天更新一波！
-NSS测试更新：https://github.com/yaya131/RedMi-AX6-NSS
+只编译5.10内核的IPQ807X
+没有源码的更新，只更新最新插件
+
 IPQ807x无线NSS，暂时没测试！基于这位大神的源码：https://github.com/qosmio/openwrt-ipq.git
 
 国内网盘：https://wwnn.lanzoue.com/b02c8p8ta
